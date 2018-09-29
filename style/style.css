@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f12711;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
+  background: linear-gradient(to right, #f5af19, #f12711);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 5rem auto;
+}
+
+.container .col {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.container .col .title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: gold;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+  background-color: #e55632;
+  padding: 5px 10px;
+}
+
+.container .col .list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 0;
+  min-height: 250px;
+  border: 5px solid gold;
+  background-color: #e55632;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .col .list li {
+  list-style: none;
+  display: inline-block;
+  width: 150px;
+  padding-right: 10px;
+}
+
+.container .col .list li .avatar {
+  padding-bottom: 100%;
+  border-radius: 50%;
+  border: 4px solid gold;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container .col .list li .name {
+  text-align: center;
+  color: #f1f1f1;
+}
+
+.container .col .player {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container .col .player .img {
+  padding-bottom: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container .col .player p {
+  text-align: center;
+  background-color: #e55632;
+  opacity: .8;
+  color: #f1f1f1;
+  padding: 5px;
+}
+
+.container .col .controll-panel {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.container .col .controll-panel .start {
+  display: block;
+  margin: 2rem auto;
+  padding: 20px;
+  background-color: gold;
+  color: #e55632;
+  font-weight: 900;
+  border: none;
+  -webkit-box-shadow: 3px 5px 10px #e55632;
+          box-shadow: 3px 5px 10px #e55632;
+  cursor: pointer;
+}
+
+.container .col .controll-panel p {
+  font-size: 1rem;
+  margin-bottom: 0;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.container .col .controll-panel .arrow {
+  display: inline;
+  cursor: pointer;
+}
+
+.container .col .controll-panel .arrow i {
+  color: white;
+  font-size: 2rem;
+}
+
+.container .col .controll-panel .count {
+  color: white;
+  display: inline;
+  margin: 0 1rem;
+  font-weight: 800;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 2rem;
+  }
+  .container .col .list {
+    min-height: 200px;
+  }
+  .container .col .list li {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
